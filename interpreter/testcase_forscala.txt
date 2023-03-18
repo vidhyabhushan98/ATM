@@ -1,0 +1,40 @@
+input :
+object demo{
+	var x: int =5;
+	if(x>3)
+		x=x-1;
+}
+	
+
+parser output:
+ 
+parse
+demo
+id
+demo
+Token(LCURL, '{')
+body
+Token(LCURL, '{')
+stmtlist
+Token(VAR, 'VAR')
+stmt
+decleration stmt
+var eaten
+Token(ID, 'x')
+Token(COLON, ':')
+done
+done
+Token(INT, 'INT')
+id
+expr
+term
+factor
+x
+id
+term
+factor
+Token(INTEGER, 1)
+stmt
+stmt1
+Token(RCURL, '}')
+RCURL	
